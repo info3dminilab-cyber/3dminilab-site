@@ -1,4 +1,4 @@
-"use client"; // Важно: делает компонент клиентским
+"use client"; // делает компонент клиентским
 
 export default function Home() {
   return (
@@ -18,7 +18,9 @@ export default function Home() {
           {/* Кнопка "Связаться" */}
           <button
             className="border border-gray-300 hover:border-black px-8 py-4 rounded-2xl text-lg transition"
-            onClick={() => (window.location.href = "mailto:info.3dministudio@gmail.com")}
+            onClick={() =>
+              (window.location.href = "mailto:info.3dministudio@gmail.com")
+            }
           >
             Связаться
           </button>
