@@ -15,12 +15,12 @@ export default function Home() {
 
         {/* Логотип */}
         <img
-          src="/logo.png" // Положи свой логотип в public/logo.png
+          src="/logo.png" // Положи сюда свой логотип в public/logo.png
           alt="3D MiniLAB Logo"
           className="absolute top-6 left-6 w-32 md:w-48 z-10"
         />
 
-        {/* Текст "Скоро запуск!" и кнопка с анимацией */}
+        {/* Текст "Скоро запуск!" и кнопки с анимацией */}
         <motion.div
           className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10"
           initial={{ opacity: 0, y: 20 }}
@@ -36,8 +36,9 @@ export default function Home() {
             Скоро запуск!
           </motion.h1>
 
+          {/* Кнопка "Связаться" синяя */}
           <motion.button
-            className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-2xl text-lg transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl text-lg transition"
             onClick={() =>
               (window.location.href =
                 "mailto:info.3dministudio@gmail.com" +
