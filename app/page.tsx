@@ -1,23 +1,28 @@
-"use client"; // Важно: делает компонент клиентским
+"use client";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-black flex flex-col items-center justify-center px-6 gap-10">
-      <div className="text-center max-w-3xl">
-        <h1 className="text-6xl font-bold mb-6">3D MiniLAB</h1>
-        <p className="text-2xl text-gray-600 mb-8">
-          Инженерная 3D-печать для ваших задач
-        </p>
+    <main className="min-h-screen bg-white text-black flex flex-col items-center justify-start px-6 gap-10">
+      {/* Hero Section */}
+      <section className="relative w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden flex items-center justify-center">
+        <img
+          src="/3dprinter-hero.jpg"
+          alt="3D MiniLAB"
+          className="object-cover w-full h-full"
+        />
+        {/* Логотип */}
+        <img
+          src="/logo.png" // Положи сюда свой логотип в public/logo.png
+          alt="3D MiniLAB Logo"
+          className="absolute top-6 left-6 w-32 md:w-48"
+        />
 
-        <div className="flex gap-4 justify-center mb-10">
-          {/* Кнопка "Скоро запуск" */}
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl text-lg transition">
-            Скоро запуск
-          </button>
-
-          {/* Кнопка "Связаться" с mailto */}
+        <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center">
+          <h1 className="text-white text-5xl md:text-6xl font-bold mb-4">
+            Скоро запуск!
+          </h1>
           <button
-            className="border border-gray-300 hover:border-black px-8 py-4 rounded-2xl text-lg transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl text-lg transition"
             onClick={() =>
               (window.location.href =
                 "mailto:info.3dministudio@gmail.com" +
@@ -28,7 +33,32 @@ export default function Home() {
             Связаться
           </button>
         </div>
-      </div>
+      </section>
+
+      {/* Advantages Section */}
+      <section className="flex flex-col md:flex-row gap-6 justify-center mt-10 max-w-5xl w-full">
+        <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
+          <img src="/icons/precision.svg" className="mx-auto mb-4 w-16 h-16" />
+          <h3 className="font-bold mb-2 text-xl">Точная печать</h3>
+          <p className="text-gray-600">
+            Высокое качество деталей с точностью до 0.1 мм
+          </p>
+        </div>
+        <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
+          <img src="/icons/fast.svg" className="mx-auto mb-4 w-16 h-16" />
+          <h3 className="font-bold mb-2 text-xl">Быстро</h3>
+          <p className="text-gray-600">
+            Прототипирование и малые серии в короткие сроки
+          </p>
+        </div>
+        <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
+          <img src="/icons/custom.svg" className="mx-auto mb-4 w-16 h-16" />
+          <h3 className="font-bold mb-2 text-xl">Индивидуально</h3>
+          <p className="text-gray-600">
+            Изделия и сувениры под ваши идеи и проекты
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
