@@ -15,14 +15,14 @@ export default function Home() {
 
         {/* Логотип */}
         <img
-          src="/logo.png"
+          src="/logo.png" // Положи свой логотип в public/logo.png
           alt="3D MiniLAB Logo"
-          className="absolute top-6 left-6 w-32 md:w-48"
+          className="absolute top-6 left-6 w-32 md:w-48 z-10"
         />
 
-        {/* Текст и кнопки с анимацией */}
+        {/* Текст "Скоро запуск!" и кнопка с анимацией */}
         <motion.div
-          className="absolute inset-0 flex flex-col items-center justify-center gap-4"
+          className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
