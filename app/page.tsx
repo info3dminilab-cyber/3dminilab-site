@@ -1,38 +1,56 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black flex flex-col items-center justify-start px-6 gap-10">
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden flex items-center justify-center">
+      <section className="relative w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden flex items-center justify-center bg-white">
         <img
           src="/3dprinter-hero.jpg"
           alt="3D MiniLAB"
           className="object-cover w-full h-full"
         />
+
         {/* Логотип */}
         <img
-          src="/logo.png" // Положи сюда свой логотип в public/logo.png
+          src="/logo.png"
           alt="3D MiniLAB Logo"
           className="absolute top-6 left-6 w-32 md:w-48"
         />
 
-        <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center">
-          <h1 className="text-white text-5xl md:text-6xl font-bold mb-4">
+        {/* Текст и кнопки с анимацией */}
+        <motion.div
+          className="absolute inset-0 flex flex-col items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <motion.h1
+            className="text-black text-5xl md:text-6xl font-bold mb-4"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
             Скоро запуск!
-          </h1>
-          <button
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl text-lg transition"
+          </motion.h1>
+
+          <motion.button
+            className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-2xl text-lg transition"
             onClick={() =>
               (window.location.href =
                 "mailto:info.3dministudio@gmail.com" +
                 "?subject=Запрос%20на%203D-печать" +
                 "&body=Здравствуйте!%0AЯ хочу заказать 3D-печать. Пожалуйста, свяжитесь со мной.%0AСпасибо!")
             }
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
           >
             Связаться
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </section>
 
       {/* Advantages Section */}
