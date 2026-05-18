@@ -10,15 +10,15 @@ export default function Home() {
         </p>
 
         <div className="flex gap-4 justify-center mb-10">
+          {/* Кнопка "Скоро запуск" */}
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl text-lg transition">
             Скоро запуск
           </button>
 
+          {/* Кнопка "Связаться" */}
           <button
             className="border border-gray-300 hover:border-black px-8 py-4 rounded-2xl text-lg transition"
-            onClick={() =>
-              alert("Связаться: info.3dministudio@gmail.com")
-            }
+            onClick={() => (window.location.href = "mailto:info.3dministudio@gmail.com")}
           >
             Связаться
           </button>
