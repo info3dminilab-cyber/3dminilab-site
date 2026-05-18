@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Важно: делает компонент клиентским
 
 export default function Home() {
   return (
@@ -10,17 +10,19 @@ export default function Home() {
         </p>
 
         <div className="flex gap-4 justify-center mb-10">
+          {/* Кнопка "Скоро запуск" */}
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl text-lg transition">
             Скоро запуск
           </button>
 
+          {/* Кнопка "Связаться" с mailto */}
           <button
             className="border border-gray-300 hover:border-black px-8 py-4 rounded-2xl text-lg transition"
             onClick={() =>
-              window.location.href =
+              (window.location.href =
                 "mailto:info.3dministudio@gmail.com" +
                 "?subject=Запрос%20на%203D-печать" +
-                "&body=Здравствуйте!%0AЯ хочу заказать 3D-печать. Пожалуйста, свяжитесь со мной.%0AСпасибо!"
+                "&body=Здравствуйте!%0AЯ хочу заказать 3D-печать. Пожалуйста, свяжитесь со мной.%0AСпасибо!")
             }
           >
             Связаться
