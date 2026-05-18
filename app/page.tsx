@@ -9,7 +9,7 @@ export default function Home() {
       <section className="relative w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden flex items-center justify-center bg-white">
         <img
           src="/3dprinter-hero.jpg"
-          alt="3P MiniLAB"
+          alt=""
           className="object-cover w-full h-full"
         />
 
