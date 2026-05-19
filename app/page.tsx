@@ -53,14 +53,14 @@ export default function Home() {
       {/* Advantages Section */}
       <section className="flex flex-col md:flex-row gap-6 justify-center mt-10 max-w-5xl w-full">
         <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
-          <img src="/icons/precision.svg" className="mx-auto mb-4 w-16 h-16" />
+          <img src="/icons/precision.png" className="mx-auto mb-4 w-36 h-36" />
           <h3 className="font-bold mb-2 text-xl">Точная печать</h3>
           <p className="text-gray-600">
             Высокое качество деталей с точностью до ±0.1-0.2 мм
           </p>
         </div>
         <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
-          <img src="/icons/fast.svg" className="mx-auto mb-4 w-16 h-16" />
+          <img src="/icons/fast.webp" className="mx-auto mb-4 w-36 h-36" />
           <h3 className="font-bold mb-2 text-xl">Быстро</h3>
           <p className="text-gray-600">
             Прототипирование и малые серии в короткие сроки
