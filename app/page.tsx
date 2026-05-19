@@ -67,7 +67,7 @@ export default function Home() {
           </p>
         </div>
         <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
-          <img src="/icons/custom.svg" className="mx-auto mb-4 w-16 h-16" />
+          <img src="/icons/custom.png" className="mx-auto mb-4 w-36 h-36" />
           <h3 className="font-bold mb-2 text-xl">Индивидуально</h3>
           <p className="text-gray-600">
             Изделия и сувениры под ваши идеи и проекты
