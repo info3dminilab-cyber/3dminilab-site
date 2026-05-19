@@ -56,7 +56,7 @@ export default function Home() {
           <img src="/icons/precision.svg" className="mx-auto mb-4 w-16 h-16" />
           <h3 className="font-bold mb-2 text-xl">Точная печать</h3>
           <p className="text-gray-600">
-            Высокое качество деталей с точностью до 0.1 мм
+            Высокое качество деталей с точностью до ±0.1-0.2 мм
           </p>
         </div>
         <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
