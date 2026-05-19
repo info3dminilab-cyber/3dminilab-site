@@ -7,11 +7,7 @@ export default function Home() {
     <main className="min-h-screen bg-white text-black flex flex-col items-center justify-start px-6 gap-10">
       {/* Hero Section */}
       <section className="relative w-full h-[400px] md:h-[600px] rounded-xl overflow-hidden flex items-center justify-center bg-white">
-        <img
-          src="/3dprinter-hero.jpg"
-          alt="  "
-          className="object-cover w-full h-full"
-        />
+                
 
         {/* Логотип */}
         <img
