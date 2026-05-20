@@ -60,7 +60,7 @@ export default function Home() {
           </p>
         </div>
         <div className="text-center p-6 border rounded-lg shadow hover:shadow-lg transition flex-1">
-          <img src="/icons/fast.webp" className="mx-auto mb-4 w-36 h-36" />
+          <img src="/icons/fast.png" className="mx-auto mb-4 w-36 h-36" />
           <h3 className="font-bold mb-2 text-xl">Быстро</h3>
           <p className="text-gray-600">
             Прототипирование и малые серии в короткие сроки
